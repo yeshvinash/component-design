@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro";
+  min-height: 100svh;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../src/assets/fonts/SourceSansPro-Regular.woff2") format("woff2"),
+    url("../src/assets/fonts/SourceSansPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../src/assets/fonts/SourceSansPro-Bold.woff2") format("woff2"),
+    url("../src/assets/fonts/SourceSansPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../src/assets/fonts/SourceSansPro-Semibold.woff2") format("woff2"),
+    url("../src/assets/fonts/SourceSansPro-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: -0.125em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: 0.75s linear infinite spinner-border;
+  animation: 0.75s linear infinite spinner-border;
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
